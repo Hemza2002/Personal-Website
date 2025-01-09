@@ -7,12 +7,12 @@ body {
     color: #fff;
 }
 
-
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative;
 }
 
 header ul {
@@ -20,10 +20,7 @@ header ul {
     padding: 0;
     display: flex;
     justify-content: center;
-}
-
-header ul li {
-    margin: 0 15px;
+    gap: 15px;
 }
 
 header ul li a {
@@ -31,6 +28,7 @@ header ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+
 .social-logo-container {
     position: absolute;
     top: 20px;
@@ -41,15 +39,14 @@ header ul li a {
 }
 
 .social-logo {
-    width: 35px; 
+    width: 35px;
     height: 35px;
     transition: transform 0.3s ease;
 }
 
 .social-logo:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
-
 
 section {
     padding: 2rem;
@@ -63,7 +60,6 @@ section {
 #resume {
     background: #fff;
 }
-
 
 #social-media {
     background: #f4f4f4;
@@ -123,8 +119,6 @@ section {
     border: 1px solid #ffd700;
 }
 
-
-
 form {
     display: flex;
     flex-direction: column;
@@ -154,4 +148,84 @@ footer {
     padding: 1rem 0;
     background: #333;
     color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .social-logo-container {
+        flex-direction: row;
+        top: 10px;
+        left: 10px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #contact {
+        padding: 2rem 5%;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 0.9rem;
+    }
+
+    #contact button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    header ul li a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #contact {
+        padding: 1.5rem;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 0.8rem;
+    }
+
+    #contact button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
