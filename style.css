@@ -41,13 +41,13 @@ header ul li a {
 }
 
 .social-logo {
-    width: 35px; /* Adjust size */
-    height: 35px; /* Adjust size */
+    width: 35px; 
+    height: 35px;
     transition: transform 0.3s ease;
 }
 
 .social-logo:hover {
-    transform: scale(1.2); /* Add hover effect */
+    transform: scale(1.2); 
 }
 
 
@@ -70,7 +70,7 @@ section {
 }
 
 #contact {
-    background: #1a1a1a; /* Match the rest of the website's theme */
+    background: #1a1a1a;
     padding: 5rem 10%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
