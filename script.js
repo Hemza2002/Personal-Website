@@ -1,20 +1,35 @@
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+function toggleNavbar() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
 
-    emailjs.send('service_73b4mrj', 'template_565edko', {
-        user_name: name,
-        user_email: email,
-        message: message,
-    }, 'uok5fPEHgyyJOL1kf')
-    .then(() => {
-        document.getElementById('confirmation-message').style.display = 'block';
-        document.getElementById('contact-form').reset();
-    }, (error) => {
-        console.error('Failed to send message:', error);
-        alert('Oops! Something went wrong. Please try again later.');
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80, 
+                behavior: 'smooth',
+            });
+
+            const navbar = document.querySelector('.navbar');
+            if (navbar.classList.contains('active')) {
+                navbar.classList.remove('active');
+            }
+        }
     });
+});
+
+window.addEventListener('resize', () => {
+    const navbar = document.querySelector('.navbar');
+    const navToggle = document.querySelector('.nav-toggle');
+
+    if (window.innerWidth > 768) {
+        navbar.classList.remove('active');
+    } else if (window.innerWidth <= 768 && navToggle) {
+        navbar.classList.remove('active');
+    }
 });

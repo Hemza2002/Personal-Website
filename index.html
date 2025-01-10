@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Hemza Al-Shamari | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -13,254 +13,326 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.8;
-            background: #000;
-            color: #fff;
-            overflow-x: hidden;
-        }
+    img {
+        max-width: 100%;
+    }
 
-        header {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
+    body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 100;
+    }
 
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
+    nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-        nav ul li {
-            margin: 0 15px;
-        }
+    nav ul {
+    display: flex;
+    list-style: none;
+    }
 
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            transition: color 0.3s;
-        }
+    nav ul li {
+    margin: 0 15px;
+    }
 
-        nav ul li a:hover {
-            color: #ffd700;
-        }
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    }
 
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: #000;
-        }
+    nav ul li a:hover {
+    color: #ffd700;
+    }
 
-        .hero img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #ffd700;
-            margin-bottom: 20px;
-        }
+    .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            color: #ffd700;
-        }
+    .hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffd700;
+    margin-bottom: 20px;
+    }
 
-        .hero h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            color: #fff;
-        }
+    .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+    }
 
-        .hero a {
-            padding: 12px 35px;
-            background: #ffd700;
-            color: #333;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            transition: background 0.3s;
-            font-size: 1.2rem;
-        }
+    .hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    }
 
-        .hero a:hover {
-            background: #ffae00;
-        }
+    .hero a {
+    padding: 12px 35px;
+    background: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+    font-size: 1.2rem;
+    }
 
-        section {
-            padding: 5rem 10%;
-        }
+    .hero a:hover {
+    background: #ffae00;
+    }
 
-        section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #ffd700;
-            text-align: center;
-            width: 100%;
-        }
+    section {
+    padding: 5rem 10%;
+    }
 
-        #about {
-            background: #000;
-            padding: 5rem 10%;
-        }
+    section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffd700;
+    text-align: center;
+    }
 
-        .about-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    #about {
+    background: #000;
+    }
 
-        .about-container .text {
-            max-width: 60%;
-            text-align: left;
-        }
+    .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
 
-        .about-container .text p {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
+    .about-container .text {
+    max-width: 60%;
+    text-align: left;
+    }
 
-        .about-container .image {
-            max-width: 40%;
-            margin-left: 40px;
-            margin-top: -20px;
-        }
+    .about-container .text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    }
 
-        .about-container .image img {
-            width: 120%;
-            border-radius: 10px;
-        }
+    .about-container .image {
+    max-width: 40%;
+    margin-left: 40px;
+    margin-top: -20px;
+    }
 
-        .section-container {
-            background: #1a1a1a;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-            margin-bottom: 3rem;
-        }
+    .about-container .image img {
+    width: 120%;
+    border-radius: 10px;
+    }
 
-        .section-container ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .section-container {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    margin-bottom: 3rem;
+    }
 
-        .section-container ul li {
-            margin-bottom: 1.5rem;
-            padding: 0.5rem;
-            text-align: left;
-        }
+    .section-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
 
-        .section-container ul li h3,
-        .section-container ul li p,
-        .section-container ul li ul {
-            text-align: left;
-        }
+    .section-container ul li {
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    text-align: left;
+    }
 
-        .section-container ul li ul li {
-            text-align: left;
-            padding-left: 1.5rem;
-        }
+    .section-container ul li h3,
+    .section-container ul li p,
+    .section-container ul li ul {
+    text-align: left;
+    }
 
+    .section-container ul li h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+    }
 
+    .section-container ul li p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    }
 
-        .section-container ul li h3 {
-            font-size: 1.5rem;
-            color: #ffd700;
-            margin-bottom: 0.5rem;
-        }
+    .section-container ul li ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #fff;
+    }
 
-        .section-container ul li p {
-            margin: 0;
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
+    .section-container ul li ul li {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    line-height: 1.6;
+    }
 
-        .section-container ul li ul {
-            list-style-type: disc;
-            margin-left: 20px;
+    .section-container ul li .date {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+    margin-top: 10px;
+    }
 
-            color: #fff;
-        }
+    #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    }
 
-        .section-container ul li ul li {
-            font-size: 1.1rem;
-            margin-left: 2rem;
-            text-align: left;
-            line-height: 1.6;
-        }
+    #skills ul li {
+    background: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
+    #contact {
+    background: #1a1a1a;
+    padding: 5rem 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    }
 
-        .section-container ul li .date {
-            text-align: right;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 1rem;
-            margin-top: 10px;
-        }
+    #contact input,
+    #contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #222;
+    color: #fff;
+    }
 
-        #skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            gap: 1rem;
-            justify-content: center;
-        }
+    #contact button {
+    padding: 12px 35px;
+    background: #ffd700;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
 
-        #skills ul li {
-            background: #222;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 1rem;
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+    #contact button:hover {
+    background: #ffae00;
+    }
+
+    #contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+    #contact textarea {
+    resize: none;
+    height: 150px;
+    }
+
+    #contact input:focus,
+    #contact textarea:focus {
+    outline: none;
+    border: 1px solid #ffd700;
+    }
+
+    /* Footer */
+    footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .about-container {
+    flex-direction: column;
+    }
+
+    .about-container .image {
+    margin-left: 0;
+    margin-top: 20px;
+    }
+    }
     </style>
 </head>
 
+<body>
 
-<header>
-    <div class="social-logo-container">
-        <a href="https://www.linkedin.com/in/hemza-al-shamari-53459b23b/" target="_blank">
-            <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-logo">
-        </a>
-        <a href="https://github.com/hemza2002" target="_blank">
-            <img src="images/github-logo.png" alt="GitHub" class="social-logo">
-        </a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header with Navbar -->
+    <header>
+        <div class="social-logo-container">
+            <a href="https://www.linkedin.com/in/hemza-al-shamari-53459b23b/" target="_blank">
+                <img src="images/linkedin-logo.png" alt="LinkedIn" class="social-logo">
+            </a>
+            <a href="https://github.com/hemza2002" target="_blank">
+                <img src="images/github-logo.png" alt="GitHub" class="social-logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
+    <!-- Hero Section -->
     <div class="hero">
         <h1>Hemza Al-Shamari</h1>
         <h2>Software Engineer | Product Designer</h2>
-        <a href="images/resume.pdf" target="_blank">View Resume</a>    
+        <a href="images/resume.pdf" target="_blank">View Resume</a>
     </div>
-    
 
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-container">
@@ -350,138 +422,4 @@
                 <h3>Android Sharing Application
                     <a href="https://github.com/AElga/GhostPeerShareApp" target="_blank"
                         style="color: #ffd700; margin-left: 10px;">GitHub Repo</a> |
-                    <a href="https://www.figma.com/proto/pjjdnNPp6JMpuesZLykZqh/GhostPeerShare?node-id=1-370&starting-point-node-id=1%3A370"
-                        target="_blank" style="color: #ffd700; margin-left: 5px;">Application Wireframe</a>
-                </h3>
-                <ul style="padding-left: 1.5rem;">
-                    <li>Developed a Flutter application with Bluetooth Low Energy (BLE) functionalities, enabling
-                        communication with peripheral devices for data transmission.</li>
-                    <li>Enhanced connection stability and optimized data transfer rates by implementing custom BLE
-                        services and characteristics.</li>
-                    <li>Integrated background BLE scanning to allow the application to detect devices even when running
-                        in the background, improving user experience.</li>
-                    <li>Implemented secure pairing protocols to ensure encrypted communication between the application
-                        and peripheral devices, enhancing data security.</li>
-                    <li>Improved the application’s performance and reliability through rigorous testing and iteration,
-                        identifying and resolving bugs to optimize the overall user experience.</li>
-                </ul>
-            </li>
-            <li>
-                <h3>QuickBites UI/UX Design Application
-                    <a href="https://www.figma.com/proto/s3KX278ZmfexnxCS3cfo5D/Sketch-Prototype?node-id=26-2&starting-point-node-id=26%3A2"
-                        target="_blank" style="color: #ffd700; margin-left: 5px;">Application Wireframe</a>
-                </h3>
-                <ul style="padding-left: 1.5rem;">
-                    <li>Created an interactive and easy-to-use design for a mobile food-ordering application using
-                        Figma, focusing on intuitive user flows and responsive design elements.</li>
-                    <li>Conducted extensive usability studies to gather user feedback, iterating on designs to enhance
-                        user experience and streamline navigation.</li>
-                    <li>Developed detailed personas based on target audience research, ensuring the design aligned with
-                        user needs and preferences.</li>
-                    <li>Crafted user flows and wireframes to guide the user journey, focusing on reducing friction in
-                        key areas such as search, order placement, and checkout.</li>
-                    <li>Collaborated with stakeholders to align design choices with business goals, leading to a
-                        visually appealing and functional prototype ready for development.</li>
-                </ul>
-            </li>
-            <li>
-                <h3>Personal Portfolio Website</h3>
-                <ul style="padding-left: 1.5rem;">
-                    <li>Designed and developed this responsive personal portfolio website showcasing professional
-                        achievements, projects, and skills.</li>
-                    <li>Implemented a clean and user-friendly interface with navigation to highlight individual sections
-                        such as About Me, Resume, Education, Experience, and Contact.</li>
-                    <li>Integrated functionality for users to view and interact with the resume directly without
-                        requiring downloads.</li>
-                    <li>Utilized HTML, CSS, and JavaScript to create a visually appealing and dynamic website optimized
-                        for cross-browser and mobile compatibility.</li>
-                    <li>Ensured accessibility through proper semantic elements, achieving high usability standards for
-                        diverse user groups.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-
-
-
-    <section id="skills" class="section-container">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>React</li>
-            <li>Front-End</li>
-            <li>Back-End</li>
-            <li>Full Stack</li>
-            <li>HTML & CSS</li>
-            <li>GIT</li>
-            <li>iOS</li>
-            <li>Android</li>
-            <li>MySQL</li>
-            <li>Linux</li>
-            <li>Figma</li>
-            <li>UI/UX Design</li>
-            <li>Project Management</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="section-container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="confirmation-message" style="color: #ffd700; text-align: center; display: none; margin-top: 1rem;">
-            Thank you! Your message has been sent successfully.
-        </p>
-        <p id="error-message" style="color: #ff0000; text-align: center; display: none; margin-top: 1rem;">
-            Oops! Something went wrong. Please check your internet connection or try again later.
-        </p>
-    </section>
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        emailjs.init("uok5fPEHgyyJOL1kf");
-    
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-            e.preventDefault();
-    
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-    
-            emailjs.send("service_73b4mrj", "template_565edko", {
-                from_name: name,
-                reply_to: email, 
-                message: message
-            })
-            .then(
-                function (response) {
-                    console.log("SUCCESS!", response.status, response.text);
-                    document.getElementById("confirmation-message").style.display = "block";
-                    document.getElementById("error-message").style.display = "none";
-                    document.getElementById("contact-form").reset();
-                },
-                function (error) {
-                    console.error("FAILED...", error);
-                    document.getElementById("error-message").style.display = "block";
-                    document.getElementById("confirmation-message").style.display = "none";
-                }
-            );
-        });
-    </script>
-    
-
-
-
-
-    <footer>
-        <p>&copy; 2025 Hemza Al-Shamari. All rights reserved.</p>
-    </footer>
-</body>
-
-</html>
+                    <a href="https://w
